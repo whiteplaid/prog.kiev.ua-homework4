@@ -24,7 +24,7 @@ public class Main {
 				try {
 					studentsCount = Integer.valueOf(JOptionPane.showInputDialog("Type in number of students"));
 					
-					if (studentsCount == 0) throw new NumberFormatException();
+					if (studentsCount < 1) throw new NumberFormatException();
 					if (studentsCount > 10) throw new MyArrayIndexOutOfBoundsException();
 					
 					for (int i = 0; i < studentsCount;i++) {
